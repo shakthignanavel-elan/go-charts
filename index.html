@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./function.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<!-- <body>
+    <div class="container-fluid" style="display: inline-flexbox;">
+        <div class="left myscroll"">
+            <div id="chartDiv">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        <div class="right">
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item"></div>
+        </div>
+    </div>
+
+    </div>
+    <script>
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+    </script>
+</body> -->
+
+<body>
+    <div class="container-fluid" style="height: 80%;width: 68%;" id="chartDiv">
+            <canvas id="myChart"></canvas>
+    </div>
+        <div id="mySidenav" class=" sidenav">
+                <div class="row-two">
+                    <form class="checkbox-wrapper">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <form class="checkbox-wrapper d-flex flex-row">
+                        <label class="checkbox-item text-center"><input type="checkbox" value="0" class="d-none">
+                            <div>Mar1</div>
+                        </label>
+                    </form>
+                </div>
+        </div>
+</body>
+<script>
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+</script>
+
+
+</body>
+
+</html>
